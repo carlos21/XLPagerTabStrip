@@ -199,7 +199,7 @@ open class PagerTabStripViewController: UIViewController, UIScrollViewDelegate {
     }
 
     open func offsetForChild(at index: Int) -> CGFloat {
-        return (CGFloat(index) * containerView.bounds.width) + ((containerView.bounds.width - view.bounds.width) * 0.5)
+        return (CGFloat(index) * containerView.bounds.width)
     }
 
     open func offsetForChild(viewController: UIViewController) throws -> CGFloat {
